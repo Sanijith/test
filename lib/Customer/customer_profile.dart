@@ -4,7 +4,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
-import '../login_page.dart';
+import '../Admin/login_page.dart';
 import 'customer_change_psw.dart';
 
 class Customer_Profile extends StatefulWidget {

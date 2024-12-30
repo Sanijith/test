@@ -2,7 +2,7 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 
-import '../login_page.dart';
+import '../Admin/login_page.dart';
 
 class Customer_Change_Password extends StatefulWidget {
   const Customer_Change_Password({super.key, required this.name});
