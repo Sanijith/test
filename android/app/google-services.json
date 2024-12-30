@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1092348125592",
+    "project_id": "cargo-d847d",
+    "storage_bucket": "cargo-d847d.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1092348125592:android:afc1bd48f73bc842458bed",
+        "android_client_info": {
+          "package_name": "com.example.cargo_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCHgmlImqyHLhh8xo5UKaZdqNC_t_RCJU0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
