@@ -1,10 +1,9 @@
-
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
-import 'admin_home.dart';
-import '../Driver/driver_home.dart';
+import 'Admin/admin_home.dart';
+import 'Driver/driver_home.dart';
 
 class Login_Page extends StatefulWidget {
   const Login_Page({super.key});
@@ -25,8 +24,7 @@ class _Login_PageState extends State<Login_Page> {
         builder: (context) {
           return AdminHomeScreen();
         },
-      )
-      );
+      ));
     }
   }
 
@@ -44,7 +42,9 @@ class _Login_PageState extends State<Login_Page> {
                 spacing: 25,
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Text("CARGO",),
+                  Text(
+                    "CARGO",
+                  ),
                   TextFormField(
                     controller: email,
                     validator: (value) {
@@ -76,30 +76,26 @@ class _Login_PageState extends State<Login_Page> {
                       hintText: "Password",
                     ),
                   ),
-                  if (isLoading) ...[
-                    CircularProgressIndicator(),
-                  ] else ...[
-                    InkWell(
-                      onTap: () {
-                        if (formKey.currentState!.validate()) {
-                          setState(() {
-                            adlogin();
-                          });
-                        }
-                      },
-                      child: Container(
-                        height: 53,
-                        width: 100,
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(10),
-                          color: Colors.green,
-                        ),
-                        child: Center(
-                          child: Text('Login'),
-                        ),
+                  InkWell(
+                    onTap: () {
+                      if (formKey.currentState!.validate()) {
+                        setState(() {
+                          adlogin();
+                        });
+                      }
+                    },
+                    child: Container(
+                      height: 53,
+                      width: 100,
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(10),
+                        color: Colors.green,
+                      ),
+                      child: Center(
+                        child: Text('Login'),
                       ),
                     ),
-                  ],
+                  ),
                 ],
               ),
             ),
